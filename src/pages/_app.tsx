@@ -1,5 +1,6 @@
 import { MantineProvider } from '@mantine/core'
 import { NotificationsProvider } from '@mantine/notifications'
+import { ModalsProvider } from '@mantine/modals'
 import { Layout } from '../components/Layout'
 import type { AppProps } from 'next/app'
 import { reduxStore } from '../features'
@@ -15,9 +16,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         theme={{ colorScheme: 'dark' }}
       >
         <NotificationsProvider>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
+          <ModalsProvider>
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
+          </ModalsProvider>
         </NotificationsProvider>
       </MantineProvider>
     </Provider>

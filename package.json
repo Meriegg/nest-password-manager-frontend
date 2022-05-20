@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "@mantine/core": "^4.2.4",
     "@mantine/hooks": "^4.2.4",
+    "@mantine/modals": "^4.2.5",
     "@mantine/next": "^4.2.4",
     "@mantine/notifications": "^4.2.5",
     "@reduxjs/toolkit": "^1.8.1",
@@ -19,6 +21,7 @@
     "jwt-decode": "^3.1.2",
     "next": "12.1.6",
     "react": "18.1.0",
+    "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "18.1.0",
     "react-redux": "^8.0.1",
     "yup": "^0.32.11"
@@ -26,6 +29,7 @@
   "devDependencies": {
     "@types/node": "17.0.33",
     "@types/react": "18.0.9",
+    "@types/react-copy-to-clipboard": "^5.0.2",
     "@types/react-dom": "18.0.4",
     "eslint": "8.15.0",
     "eslint-config-next": "12.1.6",

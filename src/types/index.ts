@@ -16,4 +16,5 @@ export interface Password {
   platformUsername?: string
   ownerId: string
   owner: User
+  id: string
 }

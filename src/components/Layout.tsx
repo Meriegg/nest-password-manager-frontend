@@ -1,4 +1,5 @@
 import React from 'react'
+import { useStyles } from './layoutStyle'
 
 // Types
 interface Props {
@@ -6,9 +7,13 @@ interface Props {
 }
 
 export const Layout: React.FC<Props> = ({ children }) => {
+  const { classes } = useStyles()
+
   return (
     <>
-      <main>{children}</main>
+      <div className={classes.mainContainer}>
+        <main>{children}</main>
+      </div>
     </>
   )
 }
