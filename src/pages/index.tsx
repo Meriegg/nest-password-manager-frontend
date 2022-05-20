@@ -43,7 +43,7 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <h1>My passwords</h1>
+      <h1>Your Passwords</h1>
 
       <DisplayPasswords getPasswords={getPasswords} passwords={passwords} />
 
